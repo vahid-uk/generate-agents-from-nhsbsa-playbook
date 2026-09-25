@@ -228,3 +228,167 @@ ZIP
 ```
 
 For something intended to guide production coding agents, that second pass is worth doing. It reduces the risk of the local knowledge pack gradually becoming an inaccurate interpretation of the NHSBSA source.
+
+---
+
+## How to run it
+Install the dependencies:
+
+```
+python3 -m pip install requests beautifulsoup4
+```
+
+Install/start Ollama and pull the model:
+
+```
+ollama pull qwen3:14b
+ollama serve
+```
+
+Then:
+
+```
+python3 build-nhs-agent-knowledge.py \
+--model qwen3:14b \
+--max-pages 500 \
+--output ./nhs-agent-build \
+--force
+```
+
+The resulting archive will be:
+
+./nhs-agent-build/nhs-agent-knowledge.zip
+
+What I specifically changed from the previous script
+The important addition is the llms.txt discovery layer.
+
+Conceptually the crawler now does:
+```
+                    NHS source
+                       │
+              ┌────────┴────────┐
+              │                 │
+           llms.txt           HTML
+              │                 │
+              ▼                 ▼
+       curated links       page links
+              │                 │
+              └────────┬────────┘
+                       ▼
+                relevant pages
+                       │
+                       ▼
+                Markdown version
+                where available
+                       │
+                       ▼
+                 source model
+                       │
+                       ▼
+                  LLM synthesis
+                       │
+          ┌────────────┼─────────────┐
+          ▼            ▼             ▼
+       MUST/SHOULD     DO/DON'T     Sources
+          │            │             │
+          └────────────┼─────────────┘
+                       ▼
+                    SKILL.md
+```
+
+This follows the current llms.txt v2 approach rather than treating llms.txt as a giant replacement for the documentation. The specification explicitly describes llms.txt as a concise guide that points agents toward detailed material, and v2 also supports scoped files and Markdown page representations.
+L
+llms-txt
++1
+
+The NHS Service Manual side is deliberately broader than just components
+The crawler starts at the design system and follows its subsequent links, so it can capture:
+
+design principles
+
+styles
+
+components
+
+patterns
+
+prototyping
+
+production implementation
+
+accessibility-related guidance
+
+component-specific usage
+
+pattern-specific usage
+
+explicit Do/Don't material
+
+That's important because the Service Manual describes components as reusable UI elements and patterns as tested solutions to common needs, so simply dumping component names into an agent context wouldn't give the agent enough information to make appropriate implementation decisions.
+N
+nhs.uk
++1
+
+For example, the generated components/SKILL.md should be able to tell an agent not just what a component is, but preserve the source's:
+
+when to use
++
+when not to use
++
+implementation
++
+accessibility
++
+Do
++
+Don't
+
+That distinction matters particularly for the NHS Service Manual's explicit Do/Don't guidance, where the guidance can include accessibility-specific reasons for a particular implementation choice.
+N
+nhs.uk
+
+One important refinement I'd make
+I would not make the generated AGENTS.md contain all of the NHS guidance itself.
+
+Keep it as the agent's routing layer:
+```
+AGENTS.md
+│
+├── "I'm changing backend code"
+│          ↓
+│      coding
+│      secure-development
+│      testing
+│
+├── "I'm changing a form"
+│          ↓
+│      design-system
+│      components
+│      forms
+│      accessibility
+│      content
+│
+├── "I'm adding a new interaction"
+│          ↓
+│      patterns
+│      components
+│      accessibility
+│
+└── "I'm changing NHS frontend code"
+↓
+production-frontend
+design-system
+components
+accessibility
+```
+
+That keeps the root context small while allowing the agent to load detailed guidance only when relevant.
+
+It also reflects the purpose of llms.txt: a concise navigational layer followed by detailed material when the agent actually needs it.
+L
+llms-txt
+
+One other useful source relationship is that the Service Manual's current guidance explicitly says to build on common NHS styles, patterns and components, and to share new components or patterns rather than solving the same problem independently.
+N
+nhs.uk
+The generated design-system, components and patterns skills should therefore reinforce that relationship rather than treating the design system as merely a collection of CSS components.
