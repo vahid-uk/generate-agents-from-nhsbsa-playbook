@@ -1,0 +1,17 @@
+# Authoritative References
+
+- [Design system – NHS digital service manual](https://service-manual.nhs.uk/design-system/)
+- [Styles – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/)
+- [Check your frontend version – NHS digital service manual](https://service-manual.nhs.uk/design-system/guides/check-frontend-version/)
+- [Updating to version 10 – NHS digital service manual](https://service-manual.nhs.uk/design-system/guides/updating-to-v10/)
+- [Colour – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/colour/)
+- [Focus state – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/focus-state/)
+- [Icons – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/icons/)
+- [Layout – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/layout/)
+- [Page template – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/page-template/)
+- [Spacing – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/spacing/)
+- [Typography – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/typography/)
+- [Use the NHS Frutiger font – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/use-frutiger-font/)
+- [Override classes – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/override-classes/)
+- [Terms of NHS Frutiger licence – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/use-frutiger-font/terms-of-licence/)
+- [Use the NHS Frutiger font – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/use-frutiger-font/index/)

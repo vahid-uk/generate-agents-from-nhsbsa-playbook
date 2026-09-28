@@ -1,0 +1,106 @@
+# NHS Agent Knowledge Pack
+
+> LLM-oriented index of NHSBSA Digital Playbook and NHS England Digital Service Manual material collected by this build.
+
+This file is generated locally. The authoritative source remains the original NHS websites.
+
+Generated: 2026-09-28 10:03 UTC
+
+## NHSBSA Digital Playbook
+
+- [Development - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/): NHSBSA Playbook source
+- [Style guides - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-style-guide/): NHSBSA Playbook source
+- [Licensing software or code - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-licences/): NHSBSA Playbook source
+- [Coding - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding/): NHSBSA Playbook source
+- [Secure development - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-securely/): NHSBSA Playbook source
+- [Naming conventions - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-naming-conventions/): NHSBSA Playbook source
+- [Logging - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-logging/): NHSBSA Playbook source
+- [Testing - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-tests/): NHSBSA Playbook source
+- [Static code analysis - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-quality-assurance/): NHSBSA Playbook source
+- [Peer review - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-peer-review/): NHSBSA Playbook source
+- [Git - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-git/): NHSBSA Playbook source
+- [APIs - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-apis/): NHSBSA Playbook source
+- [Frontends - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-frontend/): NHSBSA Playbook source
+- [Standard code repository files - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-documentation/): NHSBSA Playbook source
+- [Clean code - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-clean-code/): NHSBSA Playbook source
+- [Coding with personal data - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-securely-personal-data/): NHSBSA Playbook source
+- [Secrets detection - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-secrets-detection/): NHSBSA Playbook source
+- [Rewriting Git history - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-git-rewrite-history/): NHSBSA Playbook source
+- [Git branching strategy - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-git-branching-strategy/): NHSBSA Playbook source
+- [Writing integration tests (Java) - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-tests-integration/): NHSBSA Playbook source
+- [Writing clean tests - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-tests-coding/): NHSBSA Playbook source
+- [Writing READMEs - NHSBSA Digital, Data and Technology Playbook - NHSBSA](https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-documentation-readme/): NHSBSA Playbook source
+
+## NHS England Digital Service Manual
+
+- [Design system – NHS digital service manual](https://service-manual.nhs.uk/design-system/): NHS Service Manual source
+- [Design principles – NHS digital service manual](https://service-manual.nhs.uk/design-system/design-principles/): NHS Service Manual source; contains explicit Do/Don't guidance
+- [Prototyping – NHS digital service manual](https://service-manual.nhs.uk/design-system/prototyping/): NHS Service Manual source
+- [Production code – NHS digital service manual](https://service-manual.nhs.uk/design-system/production/): NHS Service Manual source
+- [Styles – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/): NHS Service Manual source
+- [Components – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/): NHS Service Manual source
+- [Patterns – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/): NHS Service Manual source
+- [Check your frontend version – NHS digital service manual](https://service-manual.nhs.uk/design-system/guides/check-frontend-version/): NHS Service Manual source
+- [Updating to version 10 – NHS digital service manual](https://service-manual.nhs.uk/design-system/guides/updating-to-v10/): NHS Service Manual source
+- [Colour – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/colour/): NHS Service Manual source
+- [Focus state – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/focus-state/): NHS Service Manual source; contains explicit Do/Don't guidance
+- [Icons – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/icons/): NHS Service Manual source
+- [Layout – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/layout/): NHS Service Manual source
+- [Page template – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/page-template/): NHS Service Manual source
+- [Spacing – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/spacing/): NHS Service Manual source
+- [Typography – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/typography/): NHS Service Manual source
+- [Use the NHS Frutiger font – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/use-frutiger-font/): NHS Service Manual source
+- [Override classes – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/override-classes/): NHS Service Manual source
+- [Buttons – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/buttons/): NHS Service Manual source
+- [Character count – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/character-count/): NHS Service Manual source
+- [Checkboxes – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/checkboxes/): NHS Service Manual source
+- [Date input – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/date-input/): NHS Service Manual source
+- [Error message – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/error-message/): NHS Service Manual source
+- [Error summary – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/error-summary/): NHS Service Manual source
+- [Fieldset – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/fieldset/): NHS Service Manual source
+- [File upload – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/file-upload/): NHS Service Manual source
+- [Hint text – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/hint-text/): NHS Service Manual source
+- [Password input – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/password-input/): NHS Service Manual source
+- [Radios – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/radios/): NHS Service Manual source
+- [Search input – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/search-input/): NHS Service Manual source
+- [Select – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/select/): NHS Service Manual source
+- [Text input – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/text-input/): NHS Service Manual source
+- [Textarea – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/textarea/): NHS Service Manual source
+- [Card – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/card/): NHS Service Manual source
+- [Details – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/details/): NHS Service Manual source
+- [Do and Don't lists – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/do-and-dont-lists/): NHS Service Manual source
+- [Expander – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/expander/): NHS Service Manual source
+- [Images – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/images/): NHS Service Manual source
+- [Inset text – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/inset-text/): NHS Service Manual source
+- [Notification banners – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/notification-banners/): NHS Service Manual source
+- [Panel – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/panel/): NHS Service Manual source
+- [Review date – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/review-date/): NHS Service Manual source
+- [Summary list – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/summary-list/): NHS Service Manual source
+- [Table – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/table/): NHS Service Manual source
+- [Tabs – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/tabs/): NHS Service Manual source
+- [Tag – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/tag/): NHS Service Manual source
+- [Task list – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/task-list/): NHS Service Manual source
+- [Warning callout – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/warning-callout/): NHS Service Manual source
+- [Action link – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/action-link/): NHS Service Manual source
+- [Back link – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/back-link/): NHS Service Manual source
+- [Breadcrumbs – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/breadcrumbs/): NHS Service Manual source
+- [Contents list – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/contents-list/): NHS Service Manual source
+- [Footer – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/footer/): NHS Service Manual source
+- [Header – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/header/): NHS Service Manual source
+- [Pagination – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/pagination/): NHS Service Manual source
+- [Skip link – NHS digital service manual](https://service-manual.nhs.uk/design-system/components/skip-link/): NHS Service Manual source
+- [NHS numbers – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/ask-for-nhs-numbers/): NHS Service Manual source
+- [Check answers – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/check-answers/): NHS Service Manual source
+- [Complete multiple tasks – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/complete-multiple-tasks/): NHS Service Manual source
+- [Decide when and where to get care (care cards) – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/help-users-decide-when-and-where-to-get-care/): NHS Service Manual source
+- [Find British Sign Language content – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/find-bsl-content/): NHS Service Manual source
+- [Know that a page is up to date – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/know-that-a-page-is-up-to-date/): NHS Service Manual source
+- [A to Z page – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/a-to-z-page/): NHS Service Manual source
+- [Confirmation page – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/confirmation-page/): NHS Service Manual source
+- [Hub page – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/hub-page/): NHS Service Manual source
+- [Interruption page – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/interruption-page/): NHS Service Manual source; contains explicit Do/Don't guidance
+- [Mini-hub – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/mini-hub/): NHS Service Manual source
+- [Question pages – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/question-pages/): NHS Service Manual source
+- [Start page – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/start-page/): NHS Service Manual source
+- [Terms of NHS Frutiger licence – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/use-frutiger-font/terms-of-licence/): NHS Service Manual source; contains explicit Do/Don't guidance
+- [Use the NHS Frutiger font – NHS digital service manual](https://service-manual.nhs.uk/design-system/styles/use-frutiger-font/index/): NHS Service Manual source

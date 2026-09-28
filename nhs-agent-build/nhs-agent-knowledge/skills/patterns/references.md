@@ -1,0 +1,16 @@
+# Authoritative References
+
+- [Patterns – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/)
+- [NHS numbers – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/ask-for-nhs-numbers/)
+- [Check answers – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/check-answers/)
+- [Complete multiple tasks – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/complete-multiple-tasks/)
+- [Decide when and where to get care (care cards) – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/help-users-decide-when-and-where-to-get-care/)
+- [Find British Sign Language content – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/find-bsl-content/)
+- [Know that a page is up to date – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/know-that-a-page-is-up-to-date/)
+- [A to Z page – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/a-to-z-page/)
+- [Confirmation page – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/confirmation-page/)
+- [Hub page – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/hub-page/)
+- [Interruption page – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/interruption-page/)
+- [Mini-hub – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/mini-hub/)
+- [Question pages – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/question-pages/)
+- [Start page – NHS digital service manual](https://service-manual.nhs.uk/design-system/patterns/start-page/)

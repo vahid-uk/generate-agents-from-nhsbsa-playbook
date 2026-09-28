@@ -248,7 +248,7 @@ ollama serve
 Then:
 
 ```
-python3 build-nhs-agent-knowledge.py \
+python3 build-nhsbsa-agent-knowledge.py \
 --model qwen3:14b \
 --max-pages 500 \
 --output ./nhs-agent-build \

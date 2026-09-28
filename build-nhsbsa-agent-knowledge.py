@@ -1674,7 +1674,7 @@ def ollama(
         "stream": False,
         "options": {
             "temperature": 0.1,
-            "num_ctx": 32768,
+            "num_ctx": 8192,
         },
     }
 

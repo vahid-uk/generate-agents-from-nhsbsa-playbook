@@ -1,0 +1,143 @@
+{
+  "generated": "2026-09-28 10:03 UTC",
+  "model": "qwen3:14b",
+  "ollama": "http://localhost:11434",
+  "pages": 93,
+  "llms_txt_files": 0,
+  "skills": {
+    "coding": {
+      "source_pages": 22,
+      "validation_errors": [
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-style-guide/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-licences/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-securely/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-naming-conventions/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-logging/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-tests/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-quality-assurance/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-peer-review/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-git/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-apis/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-frontend/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-documentation/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-clean-code/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-securely-personal-data/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-secrets-detection/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/coding-git-rewrite-history/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-git-branching-strategy/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-tests-integration/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-tests-coding/"
+      ]
+    },
+    "components": {
+      "source_pages": 39,
+      "validation_errors": [
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/buttons/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/character-count/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/checkboxes/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/date-input/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/error-message/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/error-summary/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/fieldset/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/file-upload/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/hint-text/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/password-input/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/radios/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/search-input/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/select/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/text-input/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/textarea/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/card/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/details/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/do-and-dont-lists/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/expander/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/images/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/inset-text/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/notification-banners/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/panel/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/review-date/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/summary-list/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/table/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/tabs/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/tag/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/task-list/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/warning-callout/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/action-link/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/back-link/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/breadcrumbs/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/contents-list/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/footer/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/header/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/pagination/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/components/skip-link/"
+      ]
+    },
+    "design-principles": {
+      "source_pages": 1,
+      "validation_errors": [
+        "Missing source URL: https://service-manual.nhs.uk/design-system/design-principles/"
+      ]
+    },
+    "design-system": {
+      "source_pages": 15,
+      "validation_errors": [
+        "Missing source URL: https://service-manual.nhs.uk/design-system/guides/check-frontend-version/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/guides/updating-to-v10/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/styles/colour/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/styles/focus-state/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/styles/icons/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/styles/layout/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/styles/page-template/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/styles/spacing/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/styles/typography/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/styles/override-classes/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/styles/use-frutiger-font/terms-of-licence/"
+      ]
+    },
+    "dos-and-donts": {
+      "source_pages": 6,
+      "validation_errors": [
+        "Missing section: Recommended practices",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/",
+        "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-tests-integration/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/design-principles/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/styles/focus-state/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/patterns/interruption-page/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/styles/use-frutiger-font/terms-of-licence/"
+      ]
+    },
+    "patterns": {
+      "source_pages": 14,
+      "validation_errors": [
+        "Missing source URL: https://service-manual.nhs.uk/design-system/patterns/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/patterns/ask-for-nhs-numbers/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/patterns/check-answers/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/patterns/complete-multiple-tasks/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/patterns/help-users-decide-when-and-where-to-get-care/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/patterns/find-bsl-content/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/patterns/know-that-a-page-is-up-to-date/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/patterns/a-to-z-page/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/patterns/confirmation-page/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/patterns/hub-page/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/patterns/interruption-page/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/patterns/mini-hub/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/patterns/question-pages/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/patterns/start-page/"
+      ]
+    },
+    "production-frontend": {
+      "source_pages": 1,
+      "validation_errors": [
+        "Missing source URL: https://service-manual.nhs.uk/design-system/production/"
+      ]
+    },
+    "prototyping": {
+      "source_pages": 1,
+      "validation_errors": [
+        "Missing source URL: https://service-manual.nhs.uk/design-system/prototyping/"
+      ]
+    }
+  }
+}
