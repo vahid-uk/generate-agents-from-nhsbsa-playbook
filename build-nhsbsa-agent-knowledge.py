@@ -1673,8 +1673,9 @@ def ollama(
         "prompt": prompt,
         "stream": False,
         "options": {
-            "temperature": 0.1,
+            "temperature": 0.7,
             "num_ctx": 8192,
+            "num_predict": 4096,
         },
     }
 
@@ -1721,6 +1722,20 @@ THIS IS NOT A GENERAL SUMMARY.
 
 The agent must be able to use the resulting SKILL.md while implementing,
 reviewing or modifying a service.
+
+DETAILED AND COMPREHENSIVE OUTPUT
+
+- Provide thorough coverage of all topics.
+- Expand on best practices with detailed explanations.
+- Include comprehensive examples for each major concept.
+- Provide specific implementation guidance, not just general advice.
+- Add code examples where applicable.
+- Include practical scenarios and use cases.
+- Explain the 'why' behind each recommendation.
+- Cover edge cases and common pitfalls.
+- Provide implementation tips and shortcuts where relevant.
+- Add troubleshooting guidance for common issues.
+- Include verification steps and quality checks.
 
 SOURCE FIDELITY
 
@@ -1936,6 +1951,22 @@ For component and pattern material, explicitly capture:
 - relevant Do/Don't guidance
 
 Do not fabricate missing material.
+
+DETAILED OUTPUT REQUIREMENTS
+
+- Expand each section thoroughly with comprehensive explanations.
+- Include multiple practical examples for each major concept.
+- Provide specific implementation code examples where applicable.
+- Add detailed step-by-step guidance for implementation tasks.
+- Include common pitfalls and how to avoid them.
+- Add verification steps and quality checks for each major task.
+- Explain the rationale behind each recommendation.
+- Cover edge cases and exception handling.
+- Provide troubleshooting guidance for common issues.
+- Include specific configuration examples and code snippets.
+- Add real-world scenarios and use cases where possible.
+
+Target a minimum of 1000 words per skill document for comprehensive coverage.
 """
 
 

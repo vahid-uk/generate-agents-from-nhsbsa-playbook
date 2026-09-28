@@ -111,4 +111,4 @@ Follow the peer-review guidance for production changes.
 - `source/` — crawled source material
 - `llms/` — llms.txt-derived navigation material
 
-Generated: 2026-09-28 10:03 UTC
+Generated: 2026-09-28 13:37 UTC

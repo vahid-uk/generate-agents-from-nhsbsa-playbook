@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28 10:03 UTC",
+  "generated": "2026-09-28 13:37 UTC",
   "model": "qwen3:14b",
   "ollama": "http://localhost:11434",
   "pages": 93,
@@ -83,6 +83,8 @@
     "design-system": {
       "source_pages": 15,
       "validation_errors": [
+        "Missing source URL: https://service-manual.nhs.uk/design-system/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/styles/",
         "Missing source URL: https://service-manual.nhs.uk/design-system/guides/check-frontend-version/",
         "Missing source URL: https://service-manual.nhs.uk/design-system/guides/updating-to-v10/",
         "Missing source URL: https://service-manual.nhs.uk/design-system/styles/colour/",
@@ -92,14 +94,15 @@
         "Missing source URL: https://service-manual.nhs.uk/design-system/styles/page-template/",
         "Missing source URL: https://service-manual.nhs.uk/design-system/styles/spacing/",
         "Missing source URL: https://service-manual.nhs.uk/design-system/styles/typography/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/styles/use-frutiger-font/",
         "Missing source URL: https://service-manual.nhs.uk/design-system/styles/override-classes/",
-        "Missing source URL: https://service-manual.nhs.uk/design-system/styles/use-frutiger-font/terms-of-licence/"
+        "Missing source URL: https://service-manual.nhs.uk/design-system/styles/use-frutiger-font/terms-of-licence/",
+        "Missing source URL: https://service-manual.nhs.uk/design-system/styles/use-frutiger-font/index/"
       ]
     },
     "dos-and-donts": {
       "source_pages": 6,
       "validation_errors": [
-        "Missing section: Recommended practices",
         "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/",
         "Missing source URL: https://nhsbsa.github.io/nhsbsa-digital-playbook/development/dev-tests-integration/",
         "Missing source URL: https://service-manual.nhs.uk/design-system/design-principles/",

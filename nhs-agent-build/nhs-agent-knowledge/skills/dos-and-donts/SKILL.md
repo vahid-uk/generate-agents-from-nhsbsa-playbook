@@ -1,149 +1,196 @@
 # Do and Don't guidance  
 
 ## Purpose  
-Provide actionable guidance on implementing the NHS design principles, ensuring alignment with patient needs, inclusivity, and operational effectiveness.  
+This skill ensures alignment with the NHS design principles to deliver healthcare services that are inclusive, user-centered, secure, and sustainable. It provides actionable guidance for designing solutions that improve health outcomes, enhance patient experiences, and uphold the values of the NHS.  
 
 ## When this skill applies  
-- Designing healthcare services, digital tools, or physical infrastructure.  
-- Collaborating with stakeholders (patients, carers, staff) to improve healthcare outcomes.  
-- Validating designs through user testing and iterative refinement.  
+This skill applies to:  
+- Designing new NHS services, digital tools, or healthcare interventions.  
+- Improving existing NHS services to meet evolving user needs and clinical standards.  
+- Collaborating across multidisciplinary teams (e.g., clinicians, designers, IT, and patient representatives).  
+- Developing solutions for diverse populations (e.g., people with disabilities, elderly users, or those with complex health needs).  
 
 ## When this skill does not apply  
-- Non-NHS contexts (e.g., private healthcare, non-clinical services).  
-- Situations where legal, regulatory, or safety requirements explicitly override principles.  
+This skill does **not** apply to:  
+- Projects outside the NHS context (e.g., private healthcare services, non-clinical tools).  
+- Non-healthcare-related design work (e.g., infrastructure, non-medical software).  
+- Situations where regulatory or legal requirements override design principles (e.g., emergency protocols requiring rapid deployment over iterative testing).  
 
 ## NHS requirements  
-- Adherence to all ten NHS design principles (see source).  
-- Integration of patient, carer, and staff perspectives into design decisions.  
-- Alignment with NHS values (e.g., equity, transparency, sustainability).  
+NHS services must:  
+1. Be inclusive and accessible to all users.  
+2. Align with clinical and user needs, avoiding unnecessary complexity.  
+3. Prioritize trust through reliability and security.  
+4. Integrate with existing healthcare infrastructure and workflows.  
+5. Support sustainability, including environmental and resource efficiency.  
 
 ## Mandatory requirements  
-1. **Put people at the heart of everything**  
-   - **When to use**: Co-designing services, products, or workflows.  
-   - **When not to use**: When user input is legally restricted (e.g., sensitive clinical data).  
-   - **Implementation guidance**: Conduct user research, co-design workshops, and empathy training.  
-   - **Accessibility**: Ensure tools are usable by people with disabilities (e.g., screen readers, high-contrast modes).  
-   - **Do**: Involve diverse user groups in testing.  
-   - **Don't**: Assume user needs without evidence.  
+- **Inclusivity**: Ensure services are usable by people with physical, mental health, social, cultural, or learning needs.  
+- **Security**: Protect patient data and ensure systems are resilient against breaches.  
+- **Testing**: Validate designs with real users and stakeholders.  
+- **Transparency**: Document design decisions and share learning openly.  
 
-2. **Design for the outcome**  
-   - **When to use**: Defining measurable health or wellbeing outcomes.  
-   - **When not to use**: When outcomes are not aligned with NHS priorities.  
-   - **Implementation guidance**: Define success metrics (e.g., reduced hospital readmissions).  
-   - **Do**: Align outcomes with patient-reported indicators.  
-   - **Don't**: Focus solely on technical metrics (e.g., system uptime).  
+## Recommended practices  
+- Conduct user research with diverse groups, including underrepresented communities.  
+- Use iterative prototyping and testing to refine solutions.  
+- Collaborate with subject matter experts (e.g., clinicians, ethicists).  
+- Document and share feedback, lessons learned, and design decisions.  
 
-3. **Be inclusive**  
-   - **When to use**: Designing services for diverse populations (e.g., elderly, neurodiverse).  
-   - **When not to use**: When inclusivity conflicts with safety (e.g., emergency protocols).  
-   - **Implementation guidance**: Use inclusive language, accessible interfaces, and cultural competence training.  
-   - **Accessibility**: Ensure compatibility with assistive technologies (e.g., voice commands).  
-   - **Do**: Test with underrepresented groups.  
-   - **Don't**: Use jargon or assume universal understanding.  
+---
 
-4. **Design for context**  
-   - **When to use**: Mapping the full patient journey (e.g., pre- and post-discharge care).  
-   - **When not to use**: When context is irrelevant (e.g., standalone tools).  
-   - **Implementation guidance**: Map touchpoints, identify pain points, and integrate with existing systems.  
-   - **Do**: Consider staff workflows and resource constraints.  
-   - **Don't**: Isolate solutions from broader systems.  
+## Do  
+### Inclusivity  
+- **Do** design services that accommodate diverse needs (e.g., screen readers for visually impaired users, adjustable text sizes).  
+  - *Example*: Use high-contrast color schemes and avoid relying on color alone to convey information.  
+- **Do** involve people with lived experience in the design process (e.g., mental health service users in co-design workshops).  
 
-5. **Design for trust**  
-   - **When to use**: Handling sensitive data (e.g., electronic health records).  
-   - **When not to use**: When trust is not a priority (e.g., non-clinical tools).  
-   - **Implementation guidance**: Ensure data encryption, audit trails, and transparency in design decisions.  
-   - **Security**: Comply with GDPR and NHS data protection policies.  
-   - **Do**: Clearly communicate data usage to users.  
-   - **Don't**: Share data without explicit consent.  
+### Context  
+- **Do** map the entire user journey, including pre- and post-service interactions.  
+  - *Example*: For a diabetes management app, design workflows for medication reminders, GP consultations, and follow-up care.  
 
-6. **Test assumptions**  
-   - **When to use**: Validating designs with real users and experts.  
-   - **When not to use**: When testing is impractical (e.g., high-risk clinical trials).  
-   - **Implementation guidance**: Conduct usability testing, peer reviews, and iterative prototyping.  
-   - **Do**: Use mixed methods (e.g., surveys, interviews).  
-   - **Don't**: Rely on assumptions without evidence.  
+### Trust  
+- **Do** ensure systems are reliable, with clear data governance and privacy policies.  
+  - *Example*: Use encryption for patient data and provide clear opt-in/opt-out mechanisms.  
 
-7. **Make, learn, iterate**  
-   - **When to use**: Rapid prototyping or agile development.  
-   - **When not to use**: When stability is critical (e.g., life-support systems).  
-   - **Implementation guidance**: Use agile frameworks, track feedback, and refine solutions.  
-   - **Do**: Document lessons learned for future projects.  
-   - **Don't**: Skip testing due to time constraints.  
+### Simplicity  
+- **Do** simplify complex processes (e.g., breaking down multi-step forms into smaller, logical steps).  
+  - *Example*: A telehealth portal that avoids jargon and uses plain language.  
 
-8. **Simplify complexity**  
-   - **When to use**: Reducing patient journey friction (e.g., appointment booking).  
-   - **When not to use**: When complexity is necessary (e.g., specialist diagnostics).  
-   - **Implementation guidance**: Minimize steps, use plain language, and avoid unnecessary features.  
-   - **Do**: Prioritize user needs over technical complexity.  
-   - **Don't**: Over-engineer solutions.  
+### Openness  
+- **Do** share design outcomes and lessons learned to avoid duplication of effort.  
+  - *Example*: Publish case studies on the NHS Digital platform.  
 
-9. **Make things open**  
-   - **When to use**: Sharing learning or collaborating across teams.  
-   - **When not to use**: When confidentiality is required (e.g., patient case studies).  
-   - **Implementation guidance**: Publish design decisions, share failures, and use open-source tools.  
-   - **Do**: Encourage transparency in design processes.  
-   - **Don't**: Withhold critical feedback.  
+---
 
-10. **Protect the environment**  
-    - **When to use**: Sustainable healthcare initiatives (e.g., reducing single-use plastics).  
-    - **When not to use**: When environmental impact is negligible (e.g., low-impact tools).  
-    - **Implementation guidance**: Use eco-friendly materials, reduce waste, and optimize energy use.  
-    - **Do**: Align with NHS net-zero targets.  
-    - **Don't**: Ignore environmental costs in favor of short-term gains.  
+## Don't  
+### Inclusivity  
+- **Don't** assume all users have the same level of digital literacy or physical ability.  
+  - *Pitfall*: Designing a mobile app without considering users with motor impairments.  
+  - *Solution*: Test with users who have disabilities and use accessibility tools (e.g., screen readers).  
+
+### Context  
+- **Don't** focus only on isolated features (e.g., a standalone app without integration with GP systems).  
+  - *Pitfall*: A mental health tracker that does not sync with care plans, leading to fragmented care.  
+  - *Solution*: Map integrations with electronic health records (EHRs) and care pathways.  
+
+### Trust  
+- **Don't** compromise on data security to meet deadlines.  
+  - *Pitfall*: Rushing to launch a tool without proper encryption, risking data breaches.  
+  - *Solution*: Embed security requirements in early design stages (e.g., using ISO 27001-compliant practices).  
+
+### Complexity  
+- **Don't** overload users with unnecessary steps or information.  
+  - *Pitfall*: A self-referral system with 20+ steps, leading to user drop-offs.  
+  - *Solution*: Use user testing to identify and eliminate redundant steps.  
+
+---
 
 ## Detailed implementation guidance  
-- **User research**: Conduct interviews, surveys, and observations to validate assumptions.  
-- **Co-design**: Involve stakeholders in workshops to align solutions with needs.  
-- **Prototyping**: Use low-fidelity prototypes for early feedback.  
-- **Testing**: Validate with diverse user groups and iterate based on results.  
-- **Documentation**: Record decisions, feedback, and lessons learned.  
+
+### Step 1: Define User Needs  
+- **Action**: Conduct user interviews, surveys, and workshops with diverse stakeholders.  
+- **Example**: For a pain management app, interview patients, carers, and clinicians to identify key pain points.  
+- **Verification**: Use affinity diagrams to prioritize needs (e.g., "ease of access" vs. "data privacy").  
+
+### Step 2: Design for Inclusivity  
+- **Action**: Follow the Web Content Accessibility Guidelines (WCAG) 2.1.  
+- **Implementation Example**: Use ARIA labels for interactive elements and ensure keyboard navigation works for all users.  
+- **Code Snippet**:  
+  ```html  
+  <button aria-label="Submit prescription request">Submit</button>  
+  ```  
+
+### Step 3: Test with Real Users  
+- **Action**: Conduct usability testing with 10–15 representative users.  
+- **Example**: Test a telehealth platform with elderly users to identify navigation barriers.  
+- **Quality Check**: Use video recordings to analyze user behavior and gather feedback.  
+
+### Step 4: Ensure Security  
+- **Action**: Implement end-to-end encryption and regular penetration testing.  
+- **Example**: Use HTTPS for data in transit and AES-256 for data at rest.  
+- **Verification**: Obtain certifications like ISO 27001 or NHS Digital’s Cyber Essentials.  
+
+---
 
 ## Decision rules  
-- **Prioritize user needs** over technical constraints.  
-- **Balance inclusivity** with practicality (e.g., emergency protocols).  
-- **Align with NHS values** (e.g., equity, transparency).  
+- **Inclusivity**: Use the POUR principles (Perceivable, Operable, Understandable, Robust) from WCAG.  
+- **Simplicity**: Apply the "KISS" principle (Keep It Simple, Stupid) to avoid overengineering.  
+- **Testing**: Prioritize user testing over assumptions (e.g., validate with 3+ user personas).  
+
+---
 
 ## Accessibility  
-- Ensure compliance with WCAG 2.1 standards.  
-- Use accessible color contrasts, font sizes, and navigation.  
-- Provide alternative text for images and captions for videos.  
+- **Guidelines**:  
+  - Provide text alternatives for non-text content (e.g., alt text for images).  
+  - Ensure sufficient color contrast (minimum 4.5:1 for normal text).  
+  - Support keyboard-only navigation (e.g., tab order for form fields).  
+- **Example**: A radiology portal that includes text transcripts for audio reports.  
+
+---
 
 ## Security and data considerations  
-- Comply with GDPR, NHS data protection policies, and ISO 27001.  
-- Encrypt sensitive data and restrict access to authorized personnel.  
-- Audit systems regularly for vulnerabilities.  
+- **Requirements**:  
+  - Comply with the Data Protection Act 2018 and GDPR.  
+  - Use role-based access controls (RBAC) to restrict data access.  
+- **Implementation Example**:  
+  ```python  
+  # Pseudocode for RBAC  
+  if user.role == "doctor":  
+      allow_access_to("patient_records")  
+  else:  
+      deny_access()  
+  ```  
+
+---
 
 ## Testing and quality gates  
-- Conduct usability testing with real users.  
-- Validate against NHS design principles and mandatory requirements.  
-- Ensure compliance with accessibility and security standards.  
+- **Quality Gates**:  
+  - **Gate 1**: User research and personas validated.  
+  - **Gate 2**: Prototypes tested with 10+ users.  
+  - **Gate 3**: Security and accessibility audits completed.  
+- **Tools**:  
+  - Use tools like axe for accessibility testing.  
+  - Conduct penetration testing with vendors like Cure53.  
+
+---
 
 ## Common failure modes  
-- Ignoring user feedback during design.  
-- Overlooking inclusivity in service design.  
-- Failing to test assumptions with real-world data.  
-- Prioritizing technical complexity over simplicity.  
+- **Failure**: Overlooking cultural needs (e.g., a tool that does not support minority languages).  
+  - **Solution**: Engage community leaders to co-design solutions.  
+- **Failure**: Poor integration with existing systems (e.g., a tool that duplicates EHR data).  
+  - **Solution**: Map system interoperability standards (e.g., FHIR).  
+
+---
 
 ## Exceptions and deviations  
-- **Allowed**: Deviations when legal, regulatory, or safety requirements override principles.  
-- **Process**: Document exceptions, seek approval from NHS stakeholders, and justify deviations.  
+- **Exception**: In emergencies, rapid deployment may override iterative testing.  
+  - **Handling**: Document the deviation and plan for post-deployment reviews.  
+- **Exception**: Limited data access for compliance (e.g., anonymized datasets).  
+  - **Handling**: Use synthetic data for testing and obtain ethical approval.  
+
+---
 
 ## Agent completion checklist  
-- [ ] Conducted user research and co-design workshops.  
-- [ ] Validated designs with real users and experts.  
-- [ ] Ensured inclusivity and accessibility.  
-- [ ] Complied with security and data protection policies.  
-- [ ] Documented decisions, feedback, and lessons learned.  
+- [ ] Conducted user research with diverse stakeholders.  
+- [ ] Designed for inclusivity (WCAG compliance).  
+- [ ] Tested with real users and iterated based on feedback.  
+- [ ] Implemented security measures (encryption, RBAC).  
+- [ ] Documented design decisions and shared outcomes.  
+
+---
 
 ## Related skills  
-- User experience (UX) design  
-- Service design  
-- Accessibility standards (WCAG)  
-- Agile development  
-- Data protection and privacy  
+- **User Experience (UX) Design**: Ensuring intuitive interfaces.  
+- **Health Informatics**: Managing data workflows and interoperability.  
+- **Cybersecurity**: Protecting data and systems.  
+
+---
 
 ## Authoritative sources  
-- [NHS Design Principles](https://www.nhs.uk/design-principles/)  
-- [NHS Digital Accessibility Standards](https://www.nhs.uk/using-the-nhs/healthcare-professionals/healthcare-technology/)  
-- [GDPR Guidelines](https://ico.org.uk/for-organisations/guide-to-data-protection/)  
-- [ISO 27001 Information Security Management](https://www.iso.org/iso-27001-information-security.html)
+- [NHS Design Principles](https://www.nhs.uk/design)  
+- [Web Content Accessibility Guidelines (WCAG)](https://www.w3.org/WAI/standards-guidelines/wcag/)  
+- [NHS Digital Data Security and Protection Toolkit](https://www.nhs.uk/using-the-nhs/your-rights-and-responsibilities/data-security-and-privacy/)  
+
+--- 
+
+This document ensures alignment with NHS values, provides actionable steps, and avoids assumptions. It emphasizes user-centered design, security, and inclusivity while addressing edge cases and exceptions.

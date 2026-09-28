@@ -1,106 +1,229 @@
-# NHS design system components
+# NHS Design System Components: Skip Link
 
 ## Purpose  
-Provide a skip link component to enable keyboard-only users to bypass repetitive navigation and jump directly to the main content of a page, improving accessibility for users with disabilities.
+The skip link component enables keyboard users to bypass repetitive navigation and jump directly to the main content of a webpage. It is a critical accessibility feature required by the NHS.UK frontend and GOV.UK Design System standards. By providing a visible and focusable link, it ensures users who rely on keyboards or screen readers can navigate efficiently without repeatedly tabbing through headers, menus, or other repetitive elements.
 
-## When this skill applies  
-- When creating NHS.UK pages that include a header with navigation links.  
-- When ensuring compliance with GOV.UK Design System accessibility standards.  
-- When implementing a skip link to improve keyboard navigation for users who cannot use a mouse.  
+---
 
-## When this skill does not apply  
-- When the page lacks a header or navigation section.  
-- When the main content is not marked with an `id="maincontent"` (the default target for the skip link).  
-- When the skip link is not required by NHS.UK frontend guidelines (e.g., non-NHS.UK pages).  
+## When This Skill Applies  
+Use the skip link component in the following scenarios:  
+1. **When a webpage contains a header with navigation elements** (e.g., menus, logos, or breadcrumbs) that users might need to bypass.  
+2. **When the main content is positioned after the header** (typically within a `<main id="maincontent">` element).  
+3. **On all NHS.UK frontend pages** as mandated by the Design System.  
 
-## NHS requirements  
-- All NHS.UK pages must include a skip link in the header.  
-- The skip link must use the `nhsuk-skip-link` class and follow NHS.UK frontend 10.6.0+ standards.  
-- The skip link must be visually hidden until activated by a keyboard.  
+**Example**:  
+- A patient portal page with a top navigation bar.  
+- A service landing page with a header and footer.  
 
-## Mandatory requirements  
-- The skip link must be implemented using the `skipLink` macro from the NHS.UK frontend.  
-- The `href` attribute must default to `#maincontent` (or explicitly set if the main content has a different ID).  
-- The skip link must be placed in the header, immediately after the opening `<body>` tag.  
+---
 
-## Recommended practices  
-- Use the `text` option to customize the skip link label (e.g., "Skip to main content").  
-- Avoid relying on JavaScript for skip link functionality.  
-- Ensure the skip link is the first focusable element on the page.  
+## When This Skill Does Not Apply  
+Avoid using the skip link component in the following cases:  
+1. **When there is no header or navigation** that requires skipping.  
+2. **When the main content is not marked up with an `id="maincontent"`** (the default target for the skip link).  
+3. **For pages with dynamic content loading** (e.g., single-page applications) unless the main content is explicitly marked with an `id`.  
+
+**Example**:  
+- A static "About Us" page with no navigation.  
+- A page using JavaScript to dynamically load content without a fixed `id="maincontent"`.  
+
+---
+
+## NHS Requirements  
+- **Compliance with the NHS.UK frontend 10.6.0+**.  
+- **Use of the `nhsuk-skip-link` class** for styling.  
+- **Ensure the skip link is visually hidden** until it is focused.  
+- **Follow GOV.UK accessibility standards** (e.g., keyboard focus, screen reader compatibility).  
+
+**Code Example**:  
+```html
+<p class="nhsuk-body">
+  To view the skip link, tab to this example, or click inside this example and press tab.
+</p>
+<a class="nhsuk-skip-link" data-module="nhsuk-skip-link" href="#maincontent">
+  Skip to main content
+</a>
+```
+
+---
+
+## Mandatory Requirements  
+1. **`href` Attribute**: Must point to `#maincontent` (default) or a valid `id` on the page.  
+2. **Text/HTML Content**: Must include either `text` or `html` (but not both). Default is "Skip to main content".  
+3. **Class**: Must include `nhsuk-skip-link` for correct styling.  
+4. **Focusability**: Must be keyboard focusable and visually hidden until activated.  
+
+**Example with Custom `href`**:  
+```html
+<a class="nhsuk-skip-link" data-module="nhsuk-skip-link" href="#section-2">
+  Skip to section 2
+</a>
+```
+
+---
+
+## Recommended Practices  
+- **Use the default text** ("Skip to main content") unless the page structure requires a different target.  
+- **Position the skip link immediately after the opening `<body>` tag** to ensure it is the first focusable element.  
+- **Test with screen readers and keyboard navigation** to confirm functionality.  
+- **Avoid custom CSS** that overrides the default `nhsuk-skip-link` styling.  
+
+**Custom Text Example**:  
+```html
+<a class="nhsuk-skip-link" data-module="nhsuk-skip-link" href="#maincontent">
+  Skip to main content
+</a>
+```
+
+---
 
 ## Do  
-- Use the `skipLink` macro with the `href` attribute set to `#maincontent`.  
-- Include the skip link in the header of every NHS.UK page.  
-- Test the skip link with keyboard navigation (Tab key) to ensure it activates correctly.  
-- Use the `classes` option to add custom styling if required.  
+- **Use the skip link** on every NHS.UK frontend page.  
+- **Follow the default `href="#maincontent"` convention**.  
+- **Ensure the link is focusable and visible when activated**.  
+- **Validate the skip link works with screen readers** (e.g., JAWS, NVDA).  
+
+**Implementation Step**:  
+1. Add the skip link immediately after the `<body>` tag.  
+2. Assign `id="maincontent"` to the main content area.  
+3. Test using a keyboard (Tab key) to activate the link.  
+
+---
 
 ## Don't  
-- Omit the skip link from NHS.UK pages.  
-- Use JavaScript to hide or disable the skip link.  
-- Set the `href` attribute to a non-existent or incorrect ID (e.g., `#main`).  
-- Rely on visual cues alone to indicate the skip link's purpose.  
+- **Do not remove or hide the skip link**.  
+- **Avoid using JavaScript to hide the skip link** (it must be accessible).  
+- **Do not change the `href` to a non-existent `id`** (e.g., `#footer`).  
+- **Do not use custom HTML/CSS** that breaks the default behavior.  
 
-## Detailed implementation guidance  
-1. **HTML structure**:  
+**Common Mistake**:  
+```html
+<!-- ❌ Incorrect: Missing href -->
+<a class="nhsuk-skip-link" data-module="nhsuk-skip-link">
+  Skip to content
+</a>
+```
+
+---
+
+## Detailed Implementation Guidance  
+### Step-by-Step Implementation  
+1. **Add the skip link to the `<body>`**:  
    ```html
-   <a class="nhsuk-skip-link" data-module="nhsuk-skip-link" href="#maincontent">Skip to main content</a>
-   ```  
-2. **Nunjucks macro**:  
+   <body>
+     <a class="nhsuk-skip-link" data-module="nhsuk-skip-link" href="#maincontent">
+       Skip to main content
+     </a>
+     <!-- Rest of the page -->
+   </body>
+   ```
+
+2. **Ensure the main content has `id="maincontent"`**:  
+   ```html
+   <main id="maincontent" class="nhsuk-main-wrapper">
+     <!-- Main content here -->
+   </main>
+   ```
+
+3. **Use the Nunjucks macro** (if applicable):  
    ```nunjucks
    {% from "skip-link/macro.njk" import skipLink %}
    {{ skipLink({ href: "#maincontent", text: "Skip to main content" }) }}
-   ```  
-3. **Customization**:  
-   - Use the `html` option to inject custom HTML (e.g., icons).  
-   - Add `classes` for styling (e.g., `nhsuk-skip-link--custom`).  
+   ```
 
-## Decision rules  
-- **Use the skip link** if the page has a header with navigation links.  
-- **Do not use the skip link** if the page lacks a header or main content section.  
-- **Set `href` explicitly** if the main content has an ID other than `maincontent`.  
+4. **Add custom attributes if needed** (e.g., `data-*`):  
+   ```html
+   <a class="nhsuk-skip-link" data-module="nhsuk-skip-link" href="#maincontent" data-test="skip-link">
+     Skip to main content
+   </a>
+   ```
+
+---
+
+## Decision Rules  
+- **Default to `#maincontent`** unless the main content has a different `id`.  
+- **Use the Nunjucks macro** for consistency with NHS.UK frontend.  
+- **Always include the skip link** even if the page is minimal.  
+- **Prioritize accessibility over visual design** (e.g., do not hide the link unless it is focusable).  
+
+---
 
 ## Accessibility  
-- The skip link must be focusable and visible when activated by a keyboard.  
-- Screen readers must announce the skip link as a link to the main content.  
-- Ensure the skip link is the first focusable element on the page.  
+- **Keyboard focus**: The skip link must be the first focusable element on the page.  
+- **Screen reader compatibility**: Use `aria-label` if the default text is insufficient.  
+- **Contrast**: Ensure text meets WCAG 2.1 AA/AAA contrast ratios.  
 
-## Security and data considerations  
-- Follow NHS.UK frontend guidelines for sanitizing HTML inputs (e.g., `html` option).  
-- Avoid injecting untrusted user-generated content into the skip link.  
+**Example with `aria-label`**:  
+```html
+<a class="nhsuk-skip-link" data-module="nhsuk-skip-link" href="#maincontent" aria-label="Skip to main content">
+  Skip to main content
+</a>
+```
 
-## Testing and quality gates  
-- **Manual testing**:  
-  - Tab through the page to ensure the skip link is the first focusable element.  
-  - Verify the skip link jumps to the correct section (`#maincontent`).  
-- **Automated testing**:  
-  - Use axe or similar tools to check for accessibility violations (e.g., missing `aria-label`).  
-  - Validate that the skip link is present on all NHS.UK pages.  
+---
 
-## Common failure modes  
-- Missing the skip link on NHS.UK pages.  
-- Incorrect `href` value (e.g., `#` or non-existent ID).  
-- Skip link not being the first focusable element.  
-- Using JavaScript to hide the skip link.  
+## Security and Data Considerations  
+- **Avoid dynamic `href` values** that could lead to invalid URLs (e.g., user input).  
+- **Sanitize `html` content** if using the `html` option in macros.  
+- **Prevent XSS vulnerabilities** by validating user-generated content.  
 
-## Exceptions and deviations  
-- **Allowed deviations**:  
-  - Non-NHS.UK pages may omit the skip link.  
-  - Custom skip link implementations must still follow NHS.UK frontend guidelines.  
+---
 
-## Agent completion checklist  
-- [ ] Skip link macro is imported and used correctly.  
-- [ ] `href` attribute is set to `#maincontent` (or correct ID).  
-- [ ] Skip link is the first focusable element on the page.  
-- [ ] Accessibility checks (keyboard navigation, screen reader support) are passed.  
-- [ ] Skip link is included in the header of all NHS.UK pages.  
+## Testing and Quality Gates  
+1. **Keyboard navigation**: Tab to the skip link and verify it jumps to the correct section.  
+2. **Screen reader test**: Confirm the link is announced correctly.  
+3. **Visual inspection**: Ensure the link is hidden until focused.  
+4. **Code review**: Check for correct `href`, `id`, and class attributes.  
 
-## Related skills  
-- Breadcrumbs  
-- Header components  
-- Footer navigation  
-- Accessibility testing  
+**Verification Steps**:  
+- Use tools like [axe](https://www.deque.com/axe/) for accessibility audits.  
+- Validate HTML with the NHS.UK linter.  
 
-## Authoritative sources  
-- [NHS.UK frontend skip-link documentation](https://nhsuk.github.io/nhsuk-frontend/components/skip-link/)  
-- [GOV.UK Design System: Skip links](https://design-system.service.gov.uk/components/skip-link/)  
-- [NHS.UK frontend 10.6.0+ release notes](https://github.com/nhsuk/nhsuk-frontend/releases/tag/v10.6.0)
+---
+
+## Common Failure Modes  
+1. **Missing `id="maincontent"`**: The skip link fails to navigate to the correct section.  
+2. **Incorrect `href`**: The link points to a non-existent `id`.  
+3. **No focusable skip link**: The link is hidden via CSS, breaking accessibility.  
+4. **Missing macro**: Custom HTML does not follow NHS.UK frontend conventions.  
+
+**Fix for Missing `id`**:  
+```html
+<main id="maincontent">
+  <!-- Main content -->
+</main>
+```
+
+---
+
+## Exceptions and Deviations  
+- **Exception 1**: Pages without a header or main content.  
+  - **Workaround**: Omit the skip link (not recommended; follow NHS.UK guidelines).  
+- **Exception 2**: Dynamic content with no fixed `id`.  
+  - **Workaround**: Use JavaScript to dynamically set `id="maincontent"`.  
+
+---
+
+## Agent Completion Checklist  
+- [ ] Skip link added to `<body>`.  
+- [ ] `href` points to `#maincontent` or valid `id`.  
+- [ ] Text is "Skip to main content" or customised appropriately.  
+- [ ] `nhsuk-skip-link` class applied.  
+- [ ] Tested with keyboard and screen readers.  
+- [ ] No custom CSS overrides default styling.  
+
+---
+
+## Related Skills  
+- **Navigation Menus**: Ensure they are accessible and follow GOV.UK standards.  
+- **Focus Management**: Use `tabindex` for dynamic content.  
+- **ARIA Attributes**: Apply `aria-label` where needed.  
+
+---
+
+## Authoritative Sources  
+1. [NHS.UK Design System – Skip Link](https://nhsuk.github.io/nhsuk-frontend/components/skip-link/)  
+2. [GOV.UK Accessibility Standards](https://www.gov.uk/service-manual/design/accessibility)  
+3. [W3C ARIA Guidelines](https://www.w3.org/TR/wai-aria/)  
+
+This document ensures compliance with NHS.UK frontend and GOV.UK accessibility standards, providing a robust, accessible skip link implementation.
